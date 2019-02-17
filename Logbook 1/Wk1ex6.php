@@ -2,7 +2,7 @@
 <body>
 <?php
 	$firstname = "Richard";
-	$space= "";
+	$space= "  ";
 	$lastname = "Mather";
 	$name = $firstname . $lastname;
 	echo $name;
