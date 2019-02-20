@@ -2,7 +2,7 @@
 <body>
 <?php
 
-	echo gmdate("d m Y");
+	echo gmdate("D");
 ?>
 </body>
 </html>
