@@ -6,7 +6,7 @@
 	$tax= 22;
 	$gross = $hourlyrate * $hoursperweek  ;
 	$totalearn = ($tax/100)*$gross;
-	$netwages=$gross - $totalearn
+	$netwages = $gross - $totalearn;
 	echo $netwages;
 ?>
 </body>
