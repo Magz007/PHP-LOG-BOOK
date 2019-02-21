@@ -1,4 +1,4 @@
-<?
+<?php
 $hourlyrate	= 5.75;
 	$hoursperweek = 40;
 	$gross = $hourlyrate * $hoursperweek;
@@ -6,6 +6,6 @@ $hourlyrate	= 5.75;
 <html>
 <head></head>
 <body>
-	<p> My gross wage is <?php print(“$gross”); ?>
+	<p> My gross wage is <?php print(“gross”); ?>
 </body>
 </html>
