@@ -3,11 +3,11 @@
 <?php
   $points = 0;
  // Output appropriate message depending on points awarded.
- if ( $points >= 12)
+ if ( $points > 12)
 {
    echo "Public transport is your best option. <br/>";
 }
-elseif ($points <= 1)
+elseif ($points >= 3)
 {
    echo "If you get caught say your grandmother was driving. <br/>";
 }
