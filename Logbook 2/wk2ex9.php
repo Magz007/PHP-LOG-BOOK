@@ -1,4 +1,4 @@
-<?
+<?php
   $topmodules[0] = "Internet Systems Development";
   $topmodules[5] = "Programming 1";
   $topmodules[10] = "Programming 2";
