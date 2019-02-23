@@ -7,6 +7,6 @@
 
   for($count = 0; $count <= 5; $count++)
   {
-    echo "$count module is $topModules[$count] <br/>";
+    echo "$count module is $topModules [$count] <br/>";
   }
 ?>
