@@ -5,7 +5,7 @@
   $topModules[3] = "OOAD";
   $topModules[4] = "Software Engineering";
 
-  for($count = 0; $count >= 5; $count++)
+  for($count = 0; $count <= 5; $count++)
   {
     echo "$count module is $topModules[$count] <br/>";
   }
