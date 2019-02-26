@@ -1,4 +1,5 @@
 <?php
+  $total = 0;
   $mymarks["CO450"] = 64;
   $mymarks["CO452"] = 71;
   $mymarks["CO454"] = 62.40;
@@ -9,12 +10,12 @@
   while(list($index,$value) = each($mymarks))
   {
     echo "for  $index  my grade was  $value % <br/>";
+    $total = $total + $mymarks;
+    $average = $total /  6;
+    echo $average;
 
   }
 
-  $total = 0;
-  $total = $total + $mymarks;
-  $average = $total /  6;
-  echo $average;
 
+  
 ?>
