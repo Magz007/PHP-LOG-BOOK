@@ -11,7 +11,7 @@
 </head>
 <body>
 <table border=1 align="center">
-<tr><th>Index</th><th>Subject</th></tr>
+<tr><th>Index</th><th>Subject</th><th>Module Code</th><th>Grade</tr>
 <?php
   for($count = 0;$count < 5;$count++)
   {
