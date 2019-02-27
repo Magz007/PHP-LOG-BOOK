@@ -7,6 +7,8 @@
   $mymarks["year 1"] = 55;
   $mymarks["year 2"] = 65;
   $mymarks["year 3"] = 75;
+  $mymarks["year 2"] = 65;
+  $mymarks["year 3"] = 75;
 
 
 ?>
@@ -19,7 +21,7 @@
 <?php
   for($count = 0;$count < 5;$count++)
   {
-    echo "<tr><td>$count</td> <td>$topmodules[$count]</td></tr>";
+    echo "<tr><td>$count</td> <td>$topmodules[$count]</td> <td>$mymarks[$count]</td></tr>";
   }
 ?>
 </table>
