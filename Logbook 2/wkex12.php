@@ -4,6 +4,10 @@
   $topmodules[2] = "Programming 2";
   $topmodules[3] = "Web Application Development";
   $topmodules[4] = "Software Engineering";
+  $mymarks["year 1"] = 55;
+  $mymarks["year 2"] = 65;
+  $mymarks["year 3"] = 75;
+
 
 ?>
 <head>
@@ -11,7 +15,7 @@
 </head>
 <body>
 <table border=1 align="center">
-<tr><th>Index</th><th>Subject</th><th>Module Code</th><th>Grade</tr>
+<tr><th>Index</th><th>Subject</th><th>MARK</th><th>Year</tr>
 <?php
   for($count = 0;$count < 5;$count++)
   {
