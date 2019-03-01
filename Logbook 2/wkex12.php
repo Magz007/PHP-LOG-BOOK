@@ -24,7 +24,7 @@ $mymarks["year 5"] = 75;
 <?php
   for($count = 0;$count < 5;$count++)
   {
-    echo "<tr> <td>$count</td> <td>$topModules[$count]</td> <td>$mymarks[$index]</td> <td>$mymarks[$Value]</td> </tr>";
+    echo "<tr> <td>$count</td> <td>$topModules[$count]</td>  </tr>";
 
   }
 ?>
