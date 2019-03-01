@@ -4,6 +4,8 @@
   $topmodules[2] = "Programming 2";
   $topmodules[3] = "Web Application Development";
   $topmodules[4] = "Software Engineering";
+  ?>
+  <?php
 $mymarks["year 1"] = 55;
 $mymarks["year 2"] = 65;
 $mymarks["year 3"] = 75;
