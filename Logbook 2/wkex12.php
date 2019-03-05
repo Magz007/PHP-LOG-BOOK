@@ -11,6 +11,34 @@ $mymarks["year 2"] = 65;
 $mymarks["year 3"] = 75;
 $mymarks["year 4"] = 65;
 $mymarks["year 5"] = 75;
+
+$data = array (
+  array(
+    "code" => "XXX",
+    "name" => "mod name",
+    "yr" => 'year 1',
+    "grade" => 65
+  ),
+  array(
+    "code" => "XYZ",
+    "name" => "mod name",
+    "yr" => 'year 1',
+    "grade" => 65
+  ),
+  array(
+    "code" => "ZZZ",
+    "name" => "mod name",
+    "yr" => 'year 1',
+    "grade" => 65
+  ),
+  array(
+    "code" => "YYY",
+    "name" => "mod name",
+    "yr" => 'year 1',
+    "grade" => 65
+  )
+)
+
 ?>
 
 <head>
@@ -22,9 +50,9 @@ $mymarks["year 5"] = 75;
 <tr><th>Index</th><th>Subject</th><th>Mark</th><th>Year</th></tr>
 
 <?php
-  for($count = 0;$count < 5;$count++)
+  for($count = 0;$count < count($data);$count++)
   {
-    echo "<tr> <td>$count</td> <td>$topModules[$count]</td>  </tr>";
+    echo "<tr> <td>{$data[$count]['code']}</td> <td>$topModules[$count]</td>  </tr>";
 
   }
 ?>
