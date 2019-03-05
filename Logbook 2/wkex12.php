@@ -52,7 +52,7 @@ $data = array (
 <?php
   for($count = 0;$count < count($data);$count++)
   {
-    echo "<tr> <td>{$data[$count]['code']}</td> <td>$topModules[$count]</td>  </tr>";
+    echo "<tr> <td>{$data[$count]['code']}</td><td>{$data[$count]['name']}</td><td>{$data[$count]['yr']}</td><td>{$data[$count]['grade']}</td>  </tr>";
 
   }
 ?>
