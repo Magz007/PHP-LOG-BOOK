@@ -14,27 +14,27 @@ $mymarks["year 5"] = 75;
 
 $data = array (
   array(
-    "code" => "XXX",
-    "name" => "mod name",
+    "code" => "1",
+    "name" => "Open Source Systems",
     "yr" => 'year 1',
     "grade" => 65
   ),
   array(
-    "code" => "XYZ",
-    "name" => "mod name",
+    "code" => "2",
+    "name" => "Programming 1",
     "yr" => 'year 1',
     "grade" => 65
   ),
   array(
-    "code" => "ZZZ",
-    "name" => "mod name",
-    "yr" => 'year 1',
+    "code" => "3",
+    "name" => "Programming 2",
+    "yr" => 'year 2',
     "grade" => 65
   ),
   array(
-    "code" => "YYY",
-    "name" => "mod name",
-    "yr" => 'year 1',
+    "code" => "4",
+    "name" => "Web Application Developmente",
+    "yr" => 'year 2',
     "grade" => 65
   )
 )
