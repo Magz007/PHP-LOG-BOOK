@@ -9,7 +9,7 @@
   }
 
 
-  if ($_POST["txtgender"] == "Female")
+  if ($_POST["txtgender"] == "F")
   {
 	echo "You are Female<br/>";
   }
