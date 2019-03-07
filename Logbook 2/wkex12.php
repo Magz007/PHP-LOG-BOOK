@@ -17,7 +17,7 @@ $data = array (
     "code" => "1",
     "name" => "Open Source Systems",
     "yr" => 'year 1',
-    "grade" => 65
+    "grade" => 55
   ),
   array(
     "code" => "2",
@@ -29,7 +29,7 @@ $data = array (
     "code" => "3",
     "name" => "Programming 2",
     "yr" => 'year 2',
-    "grade" => 65
+    "grade" => 75
   ),
   array(
     "code" => "4",
@@ -37,6 +37,13 @@ $data = array (
     "yr" => 'year 2',
     "grade" => 65
   )
+),
+array(
+  "code" => "4",
+  "name" => "Software Engineering",
+  "yr" => 'year 2',
+  "grade" => 75
+)
 )
 
 ?>
