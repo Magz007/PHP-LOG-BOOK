@@ -36,8 +36,8 @@ $data = array (
     "name" => "Web Application Developmente",
     "yr" => 'year 2',
     "grade" => 65
-  )
-),
+  ),
+
 array(
   "code" => "4",
   "name" => "Software Engineering",
