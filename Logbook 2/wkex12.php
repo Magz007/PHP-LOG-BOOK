@@ -17,13 +17,13 @@ $data = array (
     "code" => "1",
     "name" => "Open Source Systems",
     "yr" => 'year 1',
-    "grade" => 55%
+    "grade" => 55
   ),
   array(
     "code" => "2",
     "name" => "Programming 1",
     "yr" => 'year 1',
-    "grade" => 65%
+    "grade" => 65
   ),
   array(
     "code" => "3",
@@ -35,14 +35,14 @@ $data = array (
     "code" => "4",
     "name" => "Web Application Developmente",
     "yr" => 'year 2',
-    "grade" => 65%
+    "grade" => 65
   ),
 
 array(
   "code" => "4",
   "name" => "Software Engineering",
   "yr" => 'year 2',
-  "grade" => 75%
+  "grade" => 75
 )
 )
 
