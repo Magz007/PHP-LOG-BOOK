@@ -54,7 +54,7 @@ array(
 <body>
 <table border=1 align="center">
 
-<tr><th>Index</th><th>Subject</th><th>Mark</th><th>Year</th></tr>
+<tr><th>Index</th><th>Subject</th><th>Year</th><th>Marks</th></tr>
 
 <?php
   for($count = 0;$count < count($data);$count++)
