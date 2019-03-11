@@ -1,4 +1,4 @@
-<?PHP
+<? PHP
   switch ($_POST["radcourse"])
   {
     case "HNC" : echo "You have selected an HNC course";
