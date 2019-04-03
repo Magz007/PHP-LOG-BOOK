@@ -12,8 +12,11 @@
 	  <option>yellow</option>
 	  <option>green</option>
 	  <option>blue</option>
-        <select type="hidden" name="hdaccount" value="<php echo $_POST[selqty]?>"/>
+        <select />
         <br/><br/>
+        <input type ="text" name="selcolour"/>
+
+        <input type="hidden" name="selqty" value="<php echo $_POST[selqty]?>"/>
         <input type="submit" value="Buy"/>
       </form>
    </body>
