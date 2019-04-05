@@ -3,7 +3,7 @@
     <body>
       <? session_start();?>
 
- <?PHP  echo "Your order qty is $_POST[selqty]"; $_session ["selcolour"]=$_POST[selqty];?>
+ <?PHP  echo "Your order qty is $_POST[selcolour]"; $_session ["selqty"]=$_POST[selcolour];?>
 
       <form action="confirmation.php"  method="post">
 	Select the colour for the <?php echo $_POST["selqty"] ?> widgets you are ordering
