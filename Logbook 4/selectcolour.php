@@ -22,8 +22,8 @@
         <br/>
         <br/>
 <input type="hidden" name="hdselqty" value="<?php echo $_POST["selqty"]?>"/>
-        <input type="submit" value="Buy"/>
-        
+<input type="submit" value="Buy"/>
+
       </form>
    </body>
 </html>
