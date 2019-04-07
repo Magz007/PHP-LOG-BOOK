@@ -3,7 +3,7 @@
     <body>
 
 
- <?PHP  echo "Your order qty is $_POST[selqty]<br>";?>
+ <?PHP  echo "Your order qty is $_POST[selqty]";?>
 
   <form action="confirmation.php"  method="post">
 
@@ -22,7 +22,7 @@
         <br/>
         <br/>
 <input type="hidden" name="hdselqty" value="<?php echo $_POST["selqty"]?>"/>
-<input type="hidden" name="hdprice" value="<?php echo $_POST["15.79"]?>"/>
+<input type="hidden" name="hdprice" value="<?php echo $_POST["price"]?>"/>
 
 <input type="submit" value="Buy"/>
 
