@@ -18,8 +18,8 @@
 	  <option>Medium</option>
 	  <option>Large</option>
 	  <option>Extra Large</option>
-
   </select>
+
 <input  name="Size"  readonly/>
         <br/>
         <br/>
