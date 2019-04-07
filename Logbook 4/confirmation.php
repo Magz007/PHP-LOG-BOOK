@@ -1,16 +1,13 @@
 <?php
 
-   echo "Your order qty is $_POST[selqty]</br>" ;
-   echo "Your order size is $_POST[hdsize]</br>" ;
-   echo " and the selected colour is $_POST[selcolour].</br>" ;
-   echo "Unit Price  $_POST[hdprice].<br/>";
+$total= 0;
+$total = $selqty * $price;
 
-
-  $total= 0;
-  $total = $selqty * $price;
-
-
-echo "The Total price to pay is $total";
+   echo "Your order Qty is $_POST[hdselqty]</br></br>" ;
+   echo "Your order Size is $_POST[hdsize]</br></br>" ;
+   echo "Unit Price  $_POST[hdprice].<br/><br/>";
+   echo "The selected colour is $_POST[selcolour].</br></br>" ;
+   echo "The Total price  is $total";
 /*
   if ( $hdselsize == [small]  )
   {
