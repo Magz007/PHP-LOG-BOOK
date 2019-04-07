@@ -4,7 +4,7 @@
 
 
  <?PHP
-echo "Your order qty is $_POST[selqty]<br/>" ;
+echo "Your order qty is $_POST[hdselqty]<br/>" ;
  echo "Your Order Size is  $_POST[selsize]<br/>";
  ?>
   <form action="confirmation.php"  method="post">
@@ -19,7 +19,7 @@ echo "Your order qty is $_POST[selqty]<br/>" ;
 
         <br/>
         <br/>
-<input type="hidden" name="hdselqty" value="<?php echo $_POST["selqty"]?>"/>
+
 <input type="hidden" name="hdsize" value="<?php echo $_POST["size"]?>"/>
 <input type="hidden" name="hdprice" value="<?php echo $_POST["price"]?>"/>
 <input type="submit" value="Buy"/>
