@@ -1,7 +1,7 @@
 <html>
   <head><title>Select colour page</title></head>
     <body>
-      <? session_start();?>
+
 
  <?PHP  echo "Your order qty is $_POST[selqty]<br>";?>
 
@@ -22,6 +22,8 @@
         <br/>
         <br/>
 <input type="hidden" name="hdselqty" value="<?php echo $_POST["selqty"]?>"/>
+<input type="hidden" name="hdprice" value="<?php echo $_POST["price"]?>"/>
+
 <input type="submit" value="Buy"/>
 
       </form>
