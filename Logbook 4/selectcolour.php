@@ -4,7 +4,7 @@
 
 
  <?PHP
-echo "Your order Qty is $_POST[selqty]<br/>" ;
+echo "Your order Qty is $_POST[hdhdselqty]<br/>" ;
  echo "Your Order Size is  $_POST[selsize]<br/>";
  ?>
   <form action="confirmation.php"  method="post">
