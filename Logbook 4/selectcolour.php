@@ -23,7 +23,30 @@
         <br/>
 <input type="hidden" name="hdselqty" value="<?php echo $_POST["selqty"]?>"/>
 <input type="hidden" name="hdprice" value="<?php echo $_POST["price"]?>"/>
-<input type="hidden" name="hdtotal" value="<?php echo $_POST["total"]?>"/>
+
+
+<?php
+$total= 0
+
+if ( $selsize == [small]  )
+{
+  echo "Public transport is your best option. <br/>";
+}
+elseif ($selsize == [Medium] )
+{
+  echo "If you get caught say your grandmother was driving. <br/>";
+}
+elseif($selsize ==Large )
+{
+  echo "There is no need to worry about the speed limit.<br/>";
+}
+elseif ($selsize == Extra Large)
+{
+  echo "There is no need to worry about the speed limit.<br/>";
+}
+
+
+?>
 
 <input type="submit" value="Buy"/>
 
