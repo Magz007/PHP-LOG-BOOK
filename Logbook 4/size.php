@@ -20,7 +20,7 @@
 	  <option>Extra Large</option>
 
   </select>
-<input  name="Size" value="Small"  readonly/>
+<input  name="Size"  readonly/>
         <br/>
         <br/>
 
