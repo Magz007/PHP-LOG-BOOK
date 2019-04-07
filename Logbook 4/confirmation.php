@@ -7,19 +7,19 @@ session_start();
 
   $total= 0
 
-  if ( $selsize == [small]  )
+  if ( $hdselsize == [small]  )
   {
     echo "Public transport is your best option. <br/>";
   }
-  elseif ($selsize == [Medium] )
+  elseif ($hdselsize == [Medium] )
   {
     echo "If you get caught say your grandmother was driving. <br/>";
   }
-  elseif($selsize ==Large )
+  elseif($hdselsize ==Large )
   {
     echo "There is no need to worry about the speed limit.<br/>";
   }
-  elseif ($selsize == Extra Large)
+  elseif ($hdselsize == Extra Large)
   {
     echo "There is no need to worry about the speed limit.<br/>";
   }
