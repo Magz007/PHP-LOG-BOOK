@@ -3,11 +3,11 @@ session_start();
    echo "Your order qty is $_POST[hdselqty]</br>" ;
    echo " and the selected colour is $_POST[selcolour].</br>" ;
   echo "The  Price  is for each is  $_POST[hdprice].<br/>";
-  echo "The Total price to pay is   $_POST[hdtotal]";
+
 
   $total= 0
   $total = $hdselqty * $hdprice;
-
+echo "The Total price to pay is   $_POST[total]";
 /*
   if ( $hdselsize == [small]  )
   {
