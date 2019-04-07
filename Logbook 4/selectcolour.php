@@ -19,7 +19,7 @@ echo "Your order Qty is $_POST[hdhdselqty]<br/>" ;
 
         <br/>
         <br/>
-<input type="hidden" name="hdselqty" value="<?php echo $_POST["selqty"]?>"/>
+
 <input type="hidden" name="hdsize" value="<?php echo $_POST["size"]?>"/>
 <input type="hidden" name="hdprice" value="<?php echo $_POST["price"]?>"/>
 
