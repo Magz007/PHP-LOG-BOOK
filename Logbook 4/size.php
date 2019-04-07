@@ -23,6 +23,7 @@
         <br/>
         <br/>
 <input type="hidden" name="hdselqty" value="<?php echo $_POST["selqty"]?>"/>
+<input type="hidden" name="hdprice" value="<?php echo $_POST["price"]?>"/>
 <input type ="size"/>
 <input type="submit" value="Buy"/>
 

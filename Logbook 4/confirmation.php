@@ -3,11 +3,11 @@
 $total= 0;
 $total = $selqty * $price;
 
-   echo "Your order Qty is $_POST[selqty]</br></br>" ;
+   echo "Your order Qty is $_POST[hdselqty]</br></br>" ;
 
-   echo "Your order Size is $_POST[selsize]</br></br>" ;
+   echo "Your order Size is $_POST[hdselsize]</br></br>" ;
 
-   echo "Unit Price  $_POST[price].<br/><br/>";
+   echo "Unit Price  $_POST[hdprice].<br/><br/>";
 
    echo "The selected colour is $_POST[selcolour].</br></br>" ;
 
