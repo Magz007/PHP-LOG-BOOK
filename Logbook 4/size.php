@@ -20,11 +20,10 @@
 	  <option>Extra Large</option>
   </select>
 
-<input  name="Size"  readonly/>
         <br/>
         <br/>
 
-
+<input  name ="size"  />
 <input type="submit" value="Buy"/>
 
       </form>

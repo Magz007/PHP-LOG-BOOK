@@ -4,17 +4,12 @@
 
 
  <?PHP
-  echo "Your order qty is $_POST[selqty]";
- echo "Your Order Size is  $_POST[selsize]";
+echo "Your order qty is $_POST[hdselqty]<br/>" ;
+ echo "Your Order Size is  $_POST[selsize]<br/>";
  ?>
-
   <form action="confirmation.php"  method="post">
-
-	Select the colour for the
-
-   widgets you are ordering
-
-   	<select name="selcolour">
+	Select the colour for the widgets you are ordering
+<select name="selcolour">
    	<option>white</option>
 	  <option>red</option>
 	  <option>yellow</option>
