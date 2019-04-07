@@ -7,8 +7,8 @@
 
 
   $total= 0
-  $total = $hdselqty * $hdprice;
-  
+  $total = $selqty * $price;
+
 echo "The Total price to pay is   $_POST[total]";
 /*
   if ( $hdselsize == [small]  )
