@@ -7,7 +7,6 @@
 
 
   $total= 0;
-
   $total = $selqty * $price;
 
 
