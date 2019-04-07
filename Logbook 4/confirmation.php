@@ -1,6 +1,6 @@
 <?php
 
-   echo "Your order qty is $_POST[hdselqty]</br>" ;
+   echo "Your order qty is $_POST[selqty]</br>" ;
    echo "Your order size is $_POST[hdsize]</br>" ;
    echo " and the selected colour is $_POST[selcolour].</br>" ;
    echo "Unit Price  $_POST[hdprice].<br/>";
