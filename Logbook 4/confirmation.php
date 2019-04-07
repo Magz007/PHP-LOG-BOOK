@@ -6,10 +6,12 @@
    echo "Unit Price  $_POST[hdprice].<br/>";
 
 
-  $total= 0
+  $total= 0;
+  $price= 15.97;
   $total = $selqty * $price;
 
-echo "The Total price to pay is   $_POST[total]";
+
+echo "The Total price to pay is $total";
 /*
   if ( $hdselsize == [small]  )
   {
