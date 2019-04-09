@@ -9,7 +9,7 @@
 <body>
 
 <?php
-while ($row = mysqli_fetch_assoc($sql))
+while ($row = mysqli_fetch_assoc($mysql_test))
 {
       echo "<a href=\"wk6ex2action.php? id=$row[name]\">$row[name]</a></br>";
 }
