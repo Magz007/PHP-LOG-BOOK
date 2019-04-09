@@ -2,7 +2,7 @@
 
 	// Connect to server and select database
 
-	$sql = "SELECT * from test where name = '$_GET[id]’ ";
+	$sql = "SELECT * from test where name = '$_GET[id]";
 	// Execute query
 	$row = mysqli_fetch_assoc($result);
 ?>
