@@ -3,7 +3,7 @@
 	// Connect to server and select database
 	$sql = "SELECT * from test";
 	// Execute sql statement
-$link = mysqli_connect(‘localhost’,’login’,’pwd’, ‘my_database’);
+$link = mysqli_connect("localhost","login","pwd", "my_database");
 $result = mysqli_query($link,$sql);
 ?>
 <html>
