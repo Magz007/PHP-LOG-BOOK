@@ -1,9 +1,9 @@
 <?php
 
 	// Connect to server and select database
-	$sql = "SELECT * from test";
+$sql = "SELECT * from test";
 	// Execute sql statement
-$link = mysqli_connect("localhost","login","pwd", "my_database");
+$link = mysqli_connect("localhost","root","", "db1_qwalke01");
 $result = mysqli_query($link,$sql);
 ?>
 <html>
