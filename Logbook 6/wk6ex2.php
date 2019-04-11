@@ -12,7 +12,7 @@
 	}
 	echo "Success: A proper connention to MySQL was made.</br>";
 
- mysqli_close($link);
+
 
 	// Execute sql statement
 
@@ -26,12 +26,12 @@ $result = mysqli_query($link,$sql);
 
 while ($row = mysqli_fetch_assoc($result))
 {
-      echo "<a href=\"wk6ex2action.php id=$row[name]\" >$row[name]  </a> </br>";
+      echo "<a href=\"wk6ex2action.php? id=$row[name]\" >$row[name]  </a> </br>";
       echo " <tr><td> $row[id] </td><td> $row[name] </td></tr>";
 }
 
 mysqli_free_result($result);
-
+ mysqli_close($link);
 ?>
 </body>
 </html>
