@@ -2,7 +2,7 @@
 
 	// Connect to server and select database
 
-	$sql = "SELECT * from db1_gwalke01";
+	$sql = "SELECT * from test";
 	$link = mysqli_connect("localhost","root","","db1_gwalke01");
 
 	if(!$link)
