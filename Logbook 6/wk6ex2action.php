@@ -14,13 +14,13 @@ $row = mysqli_fetch_assoc($result);
 <form action=""  method="post">
 
 	Name :
-	<input type=text name=txtname value="<? echo $row[name] ?>" readonly </br> />
+	<input type=text name=txtname value="<? echo $row["name"] ?>" readonly  />
 
 	Phone number :
-	<input type=text name=txttelno value="<? echo $row[phone_number] ?>" </br>/>
+	<input type=text name=txttelno value="<? echo $row["phone_number"] ?>"/>
 
 	Email :
-	<input type=text name=txtemail value="<? echo $row[email] ?>" 	</br>/>
+	<input type=text name=txtemail value="<? echo $row["email"] ?>" 	/>
 
 	<input type=submit name=btnsubmit value="save"/>
 
