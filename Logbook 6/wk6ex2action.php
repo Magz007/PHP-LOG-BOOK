@@ -1,33 +1,33 @@
 <?php
-	// Connect to server and select database
-$link = mysqli_connect("localhost","root","","db1_gwalke01");
 
+	// Connect to server and select database
+	$link = mysqli_connect("localhost","root","","db1_gwalke01");
+
+	if(!$link)
+	{
+		echo "Error: Unable to connect to MySQL.";
+		exit;
+	}
+	echo "Success: A proper connention to MySQL was made.</br>";
+
+	$sql = "SELECT * from test where name = '$_GET[id]' ";
+	// Execute query
+	$row = mysqli_fetch_assoc($result);
 ?>
+
 <html>
 <body>
-	<?php
-	$sql = "SELECT * from test where name = $_GET[id]";
-	$result = mysqli_query($link,$sql);
+<form action="" method="post">
 
-	while ($row = mysqli_fetch_row($result))
-	{
-	echo " $row[0] $row[1] <br/>";
-	}
-	mysqli_free_result($result);
-	mysqli_close($link);
-	?>
-<form action=""  method="post">
-
-	Name :
-	<input type=text name=txtname value="<?PHP echo $row["name"] ?>" />
-
+ 	Name :
+	<input type=text name=txtname value="<? echo $row[name] ?>" readonly />
+	</br>
 	Phone number :
-	<input type=text name=txttelno value="<?PHP echo $row["phone_number"] ?>"/>
-
+	<input type=text name=txttelno value="<? echo $row[phone_number] ?>" />
+	</br>
 	Email :
-	<input type=text name=txtemail value="<?PHP echo $row["email"] ?>" 	/>
-
+	<input type=text name=txtemail value="<? echo $row[email] ?>" />
+	</br>
 	<input type=submit name=btnsubmit value="save"/>
-
 </form>
 </body>
