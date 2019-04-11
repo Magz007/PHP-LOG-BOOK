@@ -20,7 +20,9 @@
 <body>
 
 <?php
+
 $result = mysqli_query($link,$sql);
+
 while ($row = mysqli_fetch_assoc($result))
 {
       echo "<a href=\"wk6ex2action.php?id=$row[name]\" >$row[name] </a> </br>";
