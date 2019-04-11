@@ -22,7 +22,7 @@
 
 <html>
 <body>
-<form action="" method="post">
+<form action="wk6ex1.html" method="post">
 
  	Name :
 	<input type=text name=txtname value= "<?php echo $row[0] ?>" readonly />
