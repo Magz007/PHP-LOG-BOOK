@@ -7,10 +7,10 @@
 
 	if(!$link)
 	{
-		echo "Error: Unable to connect to MySQL."; 
+		echo "Error: Unable to connect to MySQL.";
 	}
 
-	echo "Success: A proper connention to MySQL was made.";
+	echo "Success: A proper connention to MySQL was made.</br>";
 
 
 	// Execute sql statement
