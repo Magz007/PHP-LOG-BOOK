@@ -1,9 +1,11 @@
 <?php
 
 	// Connect to server and select database
-$sql = "SELECT * from test";
+
+	$sql = "SELECT * from test";
+	$link = mysqli_connect("localhost","root","","db1_gwalke01");
+	$result = mysqli_query($link,$sql);
 	// Execute sql statement
-$link = mysqli_connect("localhost","root","", "my_database");
 
 ?>
 <html>
@@ -12,13 +14,11 @@ $link = mysqli_connect("localhost","root","", "my_database");
 <?php
 while ($row = mysqli_fetch_assoc($result))
 {
-      echo "<a href=\"wk6ex2action.php? id=$row[name]\">$row[name]</a></br>";
+      echo "<a href=\"wk6ex2action.php?id=$row[name]\">$row[name]</a></br>";
 }
 
 mysqli_free_result($result);
 mysqli_close($link);
-
-
 ?>
 </body>
 </html>
