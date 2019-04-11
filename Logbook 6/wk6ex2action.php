@@ -1,7 +1,7 @@
 <?php
 
 	// Connect to server and select database
-
+$link = mysqli_connect("localhost","root","","db1_gwalke01");
 $sql = "SELECT * from test where name = $_GET[id]";
 	// Execute query
 $row = mysqli_fetch_assoc($result);
@@ -22,6 +22,6 @@ $row = mysqli_fetch_assoc($result);
 	<input type=text name=txtemail value="<? echo $row[email] ?>" 	</br>/>
 
 	<input type=submit name=btnsubmit value="save"/>
-	
+
 </form>
 </body>
