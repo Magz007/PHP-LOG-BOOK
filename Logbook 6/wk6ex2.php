@@ -2,7 +2,7 @@
 
 	// Connect to server and select database
 
-	$sql = "SELECT * from test";
+
 	$link = mysqli_connect("localhost","root","","db1_gwalke01");
 
 	if(!$link)
@@ -21,7 +21,7 @@
 <body>
 
 <?php
-
+$sql = "SELECT * from test";
 $result = mysqli_query($link,$sql);
 
 while ($row = mysqli_fetch_assoc($result))
