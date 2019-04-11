@@ -25,7 +25,8 @@ $result = mysqli_query($link,$sql);
 
 while ($row = mysqli_fetch_assoc($result))
 {
-      echo "<a href=\"wk6ex2action.php?id=$row[name]\" >$row[name] </a> </br>";
+      echo "<a href=\"wk6ex2action.php?id=$row[name]\" >$row[name]  </a> </br>";
+			echo "<a href=\"wk6ex2action.php?id=$row[phone_number]\" >$row[phone_number]  </a> </br>"
 }
 
 mysqli_free_result($result);
