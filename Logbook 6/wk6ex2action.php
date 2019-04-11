@@ -18,7 +18,7 @@ $link = mysqli_connect("localhost","root","","db1_gwalke01");
 <form action=""  method="post">
 
 	Name :
-	<input type=text name=txtname value="<?PHP echo $row["name"] ?>" readonly  />
+	<input type=text name=txtname value="<?PHP echo $row["name"] ?>" />
 
 	Phone number :
 	<input type=text name=txttelno value="<?PHP echo $row["phone_number"] ?>"/>
