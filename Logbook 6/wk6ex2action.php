@@ -13,6 +13,11 @@
 	$sql = "SELECT * from test where name = '$_GET[id]' ";
 	// Execute query
 	$row = mysqli_fetch_assoc($result);
+  $result = mysqli_query($link,$sql);
+	
+	mysqli_free_result($result);
+	mysqli_close($link);
+
 ?>
 
 <html>
