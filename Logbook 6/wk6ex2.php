@@ -7,10 +7,10 @@
 
 	if(!$link)
 	{
-		echo "Error: Unable to connect to MySQL."; . PHP_EOL;
+		echo "Error: Unable to connect to MySQL."; 
 	}
 
-	echo "Success: A proper connention to MySQL was made."; .PHP_EOL;
+	echo "Success: A proper connention to MySQL was made.";
 
 
 	// Execute sql statement
