@@ -8,7 +8,6 @@ $link = mysqli_connect("localhost","root","","db1_gwalke01");
 	<?php
 	$sql = "SELECT * from test where name = $_GET[id]";
 	$result = mysqli_query($link,$sql);
-	$row = mysqli_fetch_assoc($result);
 
 	while ($row = mysqli_fetch_row($result))
 	{
