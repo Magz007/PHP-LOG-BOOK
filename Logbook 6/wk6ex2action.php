@@ -13,7 +13,8 @@ $link = mysqli_connect("localhost","root","","db1_gwalke01");
 	{
 	echo " $row[0] $row[1] <br/>";
 	}
-
+	mysqli_free_result($result);
+	mysqli_close($link);
 	?>
 <form action=""  method="post">
 
