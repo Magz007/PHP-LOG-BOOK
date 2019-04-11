@@ -4,7 +4,7 @@
 $link = mysqli_connect("localhost","root","","db1_gwalke01");
 
 $sql = "SELECT * from test where name = $_GET[id]";
-
+$result = mysqli_query($link,$sql);
 $row = mysqli_fetch_assoc($result);
 
 ?>
