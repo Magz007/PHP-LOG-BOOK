@@ -26,12 +26,12 @@ $result = mysqli_query($link,$sql);
 
 while ($row = mysqli_fetch_assoc($result))
 {
-      echo "<a href=\"wk6ex2action.php?id= <tr><td $row[id]\" >$row[id] </td></tr>  </a> </br>";
+      echo "<a href=\"wk6ex2action.php?id= $row[name]\" >$row[name]   </a> </br>";
 
 }
 
 mysqli_free_result($result);
- mysqli_close($link);
+mysqli_close($link);
 ?>
 </body>
 </html>
