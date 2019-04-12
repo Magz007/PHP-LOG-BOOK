@@ -32,14 +32,3 @@
 	<input type=submit name=btnsubmit value="save"/>
 </form>
 </body>
-
-<?php
-
-$row = mysqli_fetch_assoc($result);
-$result = mysqli_query($link,$sql);
-mysqli_free_result($result);
-mysqli_close($link);
-
-
-
- ?>
