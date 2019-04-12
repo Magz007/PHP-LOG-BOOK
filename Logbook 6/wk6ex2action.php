@@ -10,7 +10,7 @@
 	}
 	echo "Success: A proper connention to MySQL was made.</br>";
 
-	$sql = "SELECT * from test where name = '$_GET[id]' ";
+	$sql = "SELECT * from test  ";
 	// Execute query
   $result = mysqli_query($link,$sql);
 	$row = mysqli_fetch_assoc($result);
