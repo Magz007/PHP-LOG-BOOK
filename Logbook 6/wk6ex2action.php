@@ -11,6 +11,7 @@
 	echo "Success: A proper connention to MySQL was made.</br>";
 
 	$sql = "SELECT * from test where name = $_GET[id] ";
+	$row = mysqli_fetch_row($result);
 	// Execute query
 ?>
 
