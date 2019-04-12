@@ -12,13 +12,11 @@
 
 	$sql = "SELECT * from test where name = $_GET[id] ";
 	// Execute query
-
-
 ?>
 
 <html>
 <body>
-<form action="wk6ex1.html" method="post">
+<form action="" method="post">
 
  	Name :
 	<input type=text name=txtname value= "<?php echo $row[0] ?>" readonly />
