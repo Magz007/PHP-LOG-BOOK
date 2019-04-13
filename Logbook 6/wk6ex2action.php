@@ -27,7 +27,7 @@
 	<input type=text name=txtname value="<? echo $row[name] ?>" readonly />
 	</br>
 	Phone number :
-	<input type=text name=txttelno value="<? echo $row[phone_number] ?>" />
+	<input type=text name=txttelno value="<? echo $row[phone_Number] ?>" />
 	</br>
 	Email :
 	<input type=text name=txtemail value="<? echo $row[email] ?>" />
