@@ -30,7 +30,7 @@
 	<input type=submit name=btnsubmit value="save"/>
 
 		<?php
-	if (isset($_POST[update]))
+	if (isset($_POST['update']))
 	{
 	$number=$_POST['phone_Number'];
 	$mail=$_POST['email'];
