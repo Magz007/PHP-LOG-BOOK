@@ -30,17 +30,11 @@
 	<input type=submit name=btnsubmit value="save"/>
 
 	<?php
-	if (isset($_POST['update']))
+	if (isset($_POST[update]))
 	{
-	$number=$_POST['phone_Number'];
-	$mail=$_POST['email'];
-
 	$file=fopen ("update.txt ", "a");
-
-	
-
-	fputs($file,$s);
-	fclose($file);
+	fputs($file,nl2br($_POST[update]).'<br>');
+  fclose($file);
 	}
 
 	 @ReadFile("update.txt")
