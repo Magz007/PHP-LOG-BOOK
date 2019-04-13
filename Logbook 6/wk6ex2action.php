@@ -11,7 +11,12 @@
 	echo "Success: A proper connention to MySQL was made.</br>";
 
 	$sql = "SELECT * from test where name = '$_GET[name]' ";
+  $result = mysqli_query($link,$sql);
+	while ($row = mysqli_fetch_assoc($result))
+	{
+	    
 
+ }
 	// Execute query
 ?>
 
