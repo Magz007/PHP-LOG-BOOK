@@ -30,10 +30,10 @@
 	<input type=submit name=btnsubmit value="save"/>
 
 	<?php
-	if (isset($_POST[btnsubmit]))
+	if (isset($_POST['btnsubmit']))
 	{
 	$file=fopen ("update.txt ");
-	fputs($file,nl2br($_POST[btnsubmit]).'<br>');
+	fputs($file,nl2br($_POST['btnsubmit']).'<br>');
   fclose($file);
 	}
 
