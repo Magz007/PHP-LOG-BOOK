@@ -17,6 +17,8 @@
 	$sql = "SELECT * from test where name = '$_GET[id]' ";
 	$result = mysqli_query($link,$sql);
 	$row = mysqli_fetch_assoc($result);
+	mysqli_free_result($result);
+	mysqli_close($link);
 
 ?>
 <html>
