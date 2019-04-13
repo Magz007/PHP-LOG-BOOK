@@ -21,7 +21,7 @@ echo "<table class='table'>";
 
 while ($row = mysqli_fetch_assoc($result))
 {
-    echo "<tr><td>$row[id] </td><td> $row[name] </td><td>  $row[email]  </td><td> $row[phone_Number] </td></tr> <br/>";
+    echo "<tr><td>$row[ID] </td><td> $row[name] </td><td>  $row[email]  </td><td> $row[phone_Number] </td></tr> <br/>";
 }
 echo "</table>";
 
