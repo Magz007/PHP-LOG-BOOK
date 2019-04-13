@@ -32,7 +32,7 @@
 	<?php
 	if (isset($_POST['btnsubmit']))
 	{
-	$file=fopen ("update.txt ");
+	$file=fopen ("update.txt ","a");
 	fputs($file,nl2br($_POST['btnsubmit']).'<br>');
   fclose($file);
 	}
