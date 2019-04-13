@@ -43,7 +43,10 @@
 	fclose($file);
 	}
 	?>
-
+	<?php
+	    // Substitute your login in place of "yourLogin"
+	 @ReadFile("update.txt")
+	?>
 
 </form>
 </body>
