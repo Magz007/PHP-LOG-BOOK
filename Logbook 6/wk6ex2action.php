@@ -29,7 +29,7 @@
 	</br>
 	<input type=submit name=btnsubmit value="save"/>
 
-		<?php
+	<?php
 	if (isset($_POST['update']))
 	{
 	$number=$_POST['phone_Number'];
@@ -42,7 +42,7 @@
 	fputs($file,$s);
 	fclose($file);
 	}
-	   ?>
+	?>
 
 
 </form>
