@@ -19,7 +19,7 @@ $result = mysqli_query($link,$sql);
 
 while ($row = mysqli_fetch_assoc($result))
 {
-      echo  “$row[0] <br/>”;
+      echo  “$row[2] <br/>”;
 }
 mysqli_free_result($result);
 mysqli_close($link);
