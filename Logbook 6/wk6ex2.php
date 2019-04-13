@@ -17,10 +17,14 @@
 $sql = "SELECT * from test";
 $result = mysqli_query($link,$sql);
 
+echo "<table class='table'>";
+
 while ($row = mysqli_fetch_assoc($result))
 {
     echo "<tr><td>$row[name] </td><td>  $row[email]  </td><td> $row[phone_Number]</td></tr> <br/>";
 }
+echo "table";
+
 mysqli_free_result($result);
 mysqli_close($link);
 ?>
