@@ -35,7 +35,7 @@
 	$number=$_POST['phone_Number'];
 	$mail=$_POST['email'];
 
-	$file=fopen ("updated ", "a");
+	$file=fopen ("update ", "a");
 
 	$s= $number. ",".$mail."\n";
 
