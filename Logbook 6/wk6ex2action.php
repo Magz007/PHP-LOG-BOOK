@@ -10,28 +10,26 @@
 	}
 	echo "Success: A proper connention to MySQL was made.</br>";
 
-	$sql = "SELECT * from test where name = '$_GET[name]' ";
-  $result = mysqli_query($link,$sql);
-	while ($row = mysqli_fetch_assoc($result))
-	{
-	    echo "$row[name]  $row[email]  $row[phone_number] <br/>";
 
- }
+
+	// Connect to server and select database
+
+	$sql = "SELECT * from test where name = '$_GET[id]' ";
 	// Execute query
+	$row = mysqli_fetch_assoc($result);
 ?>
-
 <html>
 <body>
 <form action="" method="post">
 
  	Name :
-	<input type=text name=txtname value= "<?php echo $row[name] ?>" readonly />
+	<input type=text name=txtname value="<? echo $row[name] ?>" readonly />
 	</br>
 	Phone number :
-	<input type=text name=txttelno value= "<?php echo $row[phone_number] ?>" />
+	<input type=text name=txttelno value="<? echo $row[phone_number] ?>" />
 	</br>
 	Email :
-	<input type=text name=txtemail value= "<?php echo $row[email] ?>" />
+	<input type=text name=txtemail value="<? echo $row[email] ?>" />
 	</br>
 	<input type=submit name=btnsubmit value="save"/>
 </form>
