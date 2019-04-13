@@ -19,7 +19,7 @@ $result = mysqli_query($link,$sql);
 
 while ($row = mysqli_fetch_assoc($result))
 {
-    echo "$row[name]  $row[email]  $row[phone_Number] <br/>";
+    echo "<tr><td>$row[name] </td><td>  $row[email]  </td><td> $row[phone_Number]</td></tr> <br/>";
 }
 mysqli_free_result($result);
 mysqli_close($link);
