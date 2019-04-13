@@ -37,7 +37,7 @@
 
 	$file=fopen ("update.txt ", "a");
 
-	$s= $number. ",".$mail."\n";
+	
 
 	fputs($file,$s);
 	fclose($file);
@@ -45,6 +45,6 @@
 
 	 @ReadFile("update.txt")
 	?>
-	
+
 </form>
 </body>
