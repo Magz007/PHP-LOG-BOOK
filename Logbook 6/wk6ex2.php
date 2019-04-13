@@ -23,7 +23,7 @@ while ($row = mysqli_fetch_assoc($result))
 {
     echo "<tr><td>$row[name] </td><td>  $row[email]  </td><td> $row[phone_Number]</td></tr> <br/>";
 }
-echo "table";
+echo "</table>";
 
 mysqli_free_result($result);
 mysqli_close($link);
