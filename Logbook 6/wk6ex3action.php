@@ -36,7 +36,8 @@ while($row= mysqli_fetch_array($fetchQuery))
   <td><?php echo $row['name'] ;?> </td>
     <td><?php echo $row['email'] ;?> </td>
       <td><?php echo $row['phone_Number'] ;?> </td>
-        <td> <input type= "button" name= "btndelete" value=<?php echo $row['ID'] ;?> </td>
+        <td><?php echo $row['ID'] ;?> </td>
+        <td> <input type= "checkbox" name= "btndelete" value=<?php echo $row[''] ;?> </td>
 
         <td> <input type= "submit" name="submitDeleteBtn" class-= "btn btn-info">  </td>
 
