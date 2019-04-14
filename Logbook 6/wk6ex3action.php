@@ -25,7 +25,7 @@ $fetchQuery = mysqli_query("Select * from test");
   </tr>
   <?php
 $sr=1;
-while($row= mysql_fetch_array($fetchQuery))
+while($row= mysqli_fetch_array($fetchQuery))
 {?>
   <tr>
     <form action="" method= "post" role = "form">
