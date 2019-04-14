@@ -16,11 +16,11 @@ $sql = "DELETE FROM Student WHERE studentId = $Id";
 <head> Delete Record </head>
 <body style="padding-top: 100px; " >
 <div class= "container">
-  <table class="table table-condensed table-bordered">
+  <table class="table">
   <tr>
-    <th> name </th>
-      <th> email </th>
-        <th> phone_Number </th>
+    <th> Name </th>
+      <th> Email </th>
+        <th> Phone_Number </th>
           <th> ID </th>
   </tr>
 </table>
