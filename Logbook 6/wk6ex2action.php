@@ -32,8 +32,12 @@
 	<?php
 	if (isset($_POST['txttelno']))
 	{
+	$number=$_POST['phone_Number'];
+	$mail=$_POST['email'];
+	$s= $number. ",".$mail."\n";
 	$file=fopen ("update.txt ","a");
-	fputs($file,nl2br($_POST['txttelno']).'<br>');
+	fputs($file,$s).);
+
   fclose($file);
 	}
 
