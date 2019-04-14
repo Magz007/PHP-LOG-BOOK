@@ -20,6 +20,7 @@ $fetchQuery = mysqli_query($link,$sql);
 <div class= "container">
   <table class='table'>
   <tr>
+      <th> Index </th>
     <th> Name </th>
       <th> Email </th>
         <th> Phone_Number </th>
