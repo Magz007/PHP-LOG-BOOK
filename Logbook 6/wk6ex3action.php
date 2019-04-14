@@ -25,13 +25,13 @@ $fetchQuery = mysqli_query($link,$sql);
         <th> Phone_Number </th>
           <th> ID </th>
   </tr>
-  <?php
-$sr=1;
+
+<?php
 while($row= mysqli_fetch_array($fetchQuery))
 {?>
   <tr>
     <form action="" method= "post" role = "form">
-  <td><?php echo $sr ;?> </td>
+
   <td><?php echo $row['name'] ;?> </td>
     <td><?php echo $row['email'] ;?> </td>
       <td><?php echo $row['phone_Number'] ;?> </td>
@@ -41,8 +41,8 @@ while($row= mysqli_fetch_array($fetchQuery))
 
      </form>
 </tr>
-<?php $sr ++ ;}
-?>
+
+
     </table>
 </div>
 </body>
