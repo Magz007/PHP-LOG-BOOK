@@ -8,7 +8,6 @@
 	}
 	echo "Success: A proper connention to MySQL was made.</br>";
 	// Connect to server and select database
-
 	$sql = "SELECT * from test where name = '$_GET[id]' ";
 	$result = mysqli_query($link,$sql);
 	$row = mysqli_fetch_assoc($result);
@@ -32,24 +31,19 @@
 	<?php
 	if (isset($_POST['txttelno']))
 	{
-
 	$file=fopen ("update.txt ","a");
 	fputs($file,nl2br($_POST['txttelno']).'<br>');
 
   fclose($file);
 	}
-
 	if (isset($_POST['txtemail']))
 	{
-
 	$file=fopen ("update.txt ","a");
 	fputs($file,nl2br($_POST['txtemail']).'<br>');
 
 	fclose($file);
 	}
-
 	 @ReadFile("update.txt")
 	?>
-
 </form>
 </body>
