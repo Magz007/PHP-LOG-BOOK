@@ -34,7 +34,7 @@ while($row= mysqli_fetch_array($fetchQuery))
     <td><?php echo $row['email'] ;?> </td>
       <td><?php echo $row['phone_Number'] ;?> </td>
         <td><?php echo $row['ID'] ;?> </td>
-        
+
 </form>
 </tr>
 <?php $sr++; ?>
@@ -48,26 +48,3 @@ while($row= mysqli_fetch_array($fetchQuery))
 
 </boby>
 </html>
-
-
-
-<?php
-
-/*
-if (isset($_POST['txttelno']))
-{
-$file=fopen ("update.txt ","a");
-fputs($file,nl2br($_POST['txttelno']).'<br>');
-
-fclose($file);
-}
-if (isset($_POST['txtemail']))
-{
-$file=fopen ("update.txt ","a");
-fputs($file,nl2br($_POST['txtemail']).'<br>');
-
-fclose($file);
-}
- @ReadFile("update.txt")
-?>
-*/
