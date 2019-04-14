@@ -1,6 +1,5 @@
 <?php
-
-
+// Connect to server and select database
 $link = mysqli_connect("localhost","root","","db1_gwalke01");
 if(!$link)
 {
@@ -8,9 +7,10 @@ if(!$link)
   exit;
 }
 echo "Success: A proper connention to MySQL was made.</br>";
-// Connect to server and select database
-$sql = "DELETE FROM Student WHERE studentId = $Id";
 ?>
+<?php
+$fetchQuery = mysqli_query("Select * from test");
+ ?>
 
 <html>
 <head> Delete Record </head>
@@ -18,11 +18,28 @@ $sql = "DELETE FROM Student WHERE studentId = $Id";
 <div class= "container">
   <table class='table'>
   <tr>
-    <td> Name </td>
-      <td> Email </td>
-        <td> Phone_Number </td>
-          <td> ID </td>
+    <th> Name </th>
+      <th> Email </th>
+        <th> Phone_Number </th>
+          <th> ID </th>
   </tr>
+  <?php
+$sr=1;
+while($row= mysqli_fetch_array($fetchQuery))
+{?>
+  <tr>
+    <form>
+  <td><?php echo $sr ;?> </td>
+  <td><?php echo $row['name'] ;?> </td>
+    <td><?php echo $row['email'] ;?> </td>
+      <td><?php echo $row['phone_Number'] ;?> </td>
+        <td><?php echo $row['ID'] ;?> </td>
+        
+</form>
+</tr>
+<?php $sr++; ?>
+}
+   ?>
 </table>
 </div>
 
