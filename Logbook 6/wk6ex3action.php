@@ -39,7 +39,7 @@ while($row= mysqli_fetch_array($fetchQuery))
 </tr>
 <?php $sr++; ?>
 }
-   ?>
+
 </table>
 </div>
 
