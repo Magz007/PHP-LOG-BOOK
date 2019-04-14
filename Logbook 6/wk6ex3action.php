@@ -18,7 +18,7 @@ $fetchQuery = mysqli_query($link,$sql);
 
 <body style="padding-top: 100px; " >
 <div class= "container">
-  <table class='table'>
+  <table class='table-bordered'>
   <tr>
       <th> Index </th>
     <th> Name </th>
