@@ -34,18 +34,20 @@
 	{
 
 	$file=fopen ("update.txt ","a");
-	fputs($file ,nl2br($_POST['txttelno']);
+	fputs($fp,nl2br($_POST['txttelno']).'<br>');
 
   fclose($file);
 	}
-	if (isset($_POST['phone_Number']))
+
+	if (isset($_POST['txtemail']))
 	{
 
 	$file=fopen ("update.txt ","a");
-	fputs($file ,nl2br($_POST['phone_Number']);
+	fputs($fp,nl2br($_POST['txtemail']).'<br>');
 
 	fclose($file);
 	}
+	
 	 @ReadFile("update.txt")
 	?>
 
