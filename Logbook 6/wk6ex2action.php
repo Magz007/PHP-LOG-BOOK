@@ -26,8 +26,8 @@
 	</br>
 	Email :
 	<input type=text name=txtemail value="<?php echo $row["email"] ?>" />
-	</br>
-	<input type=submit name=btnsubmit value="save"/>
+</br>
+	<input type=submit name=btnsubmit value="save"</br>/>
 
 	<?php
 	if (isset($_POST['txttelno']))
