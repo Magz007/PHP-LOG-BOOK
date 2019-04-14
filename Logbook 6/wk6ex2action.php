@@ -8,7 +8,7 @@
 	}
 	echo "Success: A proper connention to MySQL was made.</br>";
 	// Connect to server and select database
-	$sql = "SELECT * from test where name = '$_GET[id]' ";
+	$sql = "DELETE FROM Student WHERE studentId = $Id"; 
 	$result = mysqli_query($link,$sql);
 	$row = mysqli_fetch_assoc($result);
 	mysqli_free_result($result);
@@ -28,8 +28,6 @@
 </br>
 	<input type=submit name=btnsubmit value="save"/>
 
-	<input type=submit name=btnDelete value="Delete"/>
-</br>
 	<?php
 	if (isset($_POST['txttelno']))
 	{
