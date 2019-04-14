@@ -27,7 +27,7 @@
 	<input type=text name=txtemail value="<?php echo $row["email"] ?>" />
 </br>
 	<input type=submit name=btnsubmit value="save"/>
-	<input type=submit name=btnDelete value="Delete"/>
+	<input type=delete name=btnDelete value="Delete"/>
 </br>
 	<?php
 	if (isset($_POST['txttelno']))
