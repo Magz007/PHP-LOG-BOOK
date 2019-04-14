@@ -11,9 +11,9 @@ echo "Success: A proper connention to MySQL was made.</br>";
 <?php
 $fetchQuery = mysqli_query("Select * from test");
  ?>
-
 <html>
 <head> Delete Record </head>
+
 <body style="padding-top: 100px; " >
 <div class= "container">
   <table class='table'>
@@ -25,26 +25,23 @@ $fetchQuery = mysqli_query("Select * from test");
   </tr>
   <?php
 $sr=1;
-while($row= mysqli_fetch_array($fetchQuery))
+while($row= mysql_fetch_array($fetchQuery))
 {?>
   <tr>
-    <form>
+    <form action="" method= "post" role = "form">
   <td><?php echo $sr ;?> </td>
   <td><?php echo $row['name'] ;?> </td>
     <td><?php echo $row['email'] ;?> </td>
       <td><?php echo $row['phone_Number'] ;?> </td>
-        <td><?php echo $row['ID'] ;?> </td>
+        <td> <input type= "button" name= "btndelete" value=<?php echo $row['ID'] ;?> </td>
 
-</form>
+        <td> <input type= "submit" name="submitDeleteBtn" class-= "btn btn-info">  </td>
+
+     </form>
 </tr>
-<?php $sr++; ?>
-}
-
-</table>
+<?php $sr ++ ;}
+?>
+    </table>
 </div>
-
-
-
-
 </body>
 </html>
