@@ -14,7 +14,7 @@ $sql = "DELETE FROM Student WHERE studentId = $Id";
 
 <html>
 <head> Delete Record </head>
-<body>
+<body style="padding-top: 100px; " >
 <div class= "container">
   <table class="table table-condensed table-bordered">
   <tr>
@@ -36,7 +36,7 @@ $sql = "DELETE FROM Student WHERE studentId = $Id";
 
 <?php
 
-
+/*
 if (isset($_POST['txttelno']))
 {
 $file=fopen ("update.txt ","a");
@@ -53,3 +53,4 @@ fclose($file);
 }
  @ReadFile("update.txt")
 ?>
+*/
