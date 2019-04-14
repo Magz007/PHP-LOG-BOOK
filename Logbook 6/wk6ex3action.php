@@ -1,11 +1,55 @@
 <?php
-if (isset($_POST['save']))
+
+
+$link = mysqli_connect("localhost","root","","db1_gwalke01");
+if(!$link)
 {
-$number=$_POST['phone_Number'];
-$mail=$_POST['email'];
-$file=fopen ("wk6ex2action.php");
-$s= $number. ",".$mail."\n";
-fputs($file,$s);
+  echo "Error: Unable to connect to MySQL.";
+  exit;
+}
+echo "Success: A proper connention to MySQL was made.</br>";
+// Connect to server and select database
+$sql = "DELETE FROM Student WHERE studentId = $Id";
+?>
+
+<html>
+<head> Delete Record </head>
+<body>
+<div class= "container">
+  <table class="table table-condensed table-bordered">
+  <tr>
+    <th> name </th>
+      <th> email </th>
+        <th> phone_Number </th>
+          <th> ID </th>
+  </tr>
+</table>
+</div>
+
+
+
+
+</boby>
+</html>
+
+
+
+<?php
+
+
+if (isset($_POST['txttelno']))
+{
+$file=fopen ("update.txt ","a");
+fputs($file,nl2br($_POST['txttelno']).'<br>');
+
 fclose($file);
 }
-   ?>
+if (isset($_POST['txtemail']))
+{
+$file=fopen ("update.txt ","a");
+fputs($file,nl2br($_POST['txtemail']).'<br>');
+
+fclose($file);
+}
+ @ReadFile("update.txt")
+?>
