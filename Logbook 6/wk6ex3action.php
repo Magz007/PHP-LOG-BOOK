@@ -8,8 +8,10 @@ if(!$link)
 }
 echo "Success: A proper connention to MySQL was made.</br>";
 ?>
+
 <?php
-$fetchQuery = mysqli_query("Select * from test");
+$sql = "SELECT * from test";
+$fetchQuery = mysqli_query($link,$sql);
  ?>
 <html>
 <head> Delete Record </head>
