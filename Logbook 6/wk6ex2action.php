@@ -34,7 +34,7 @@
 	{
 
 	$file=fopen ("update.txt ","a");
-	fputs($fp,nl2br($_POST['txttelno']).'<br>');
+	fputs($file,nl2br($_POST['txttelno']).'<br>');
 
   fclose($file);
 	}
@@ -43,11 +43,11 @@
 	{
 
 	$file=fopen ("update.txt ","a");
-	fputs($fp,nl2br($_POST['txtemail']).'<br>');
+	fputs($file,nl2br($_POST['txtemail']).'<br>');
 
 	fclose($file);
 	}
-	
+
 	 @ReadFile("update.txt")
 	?>
 
