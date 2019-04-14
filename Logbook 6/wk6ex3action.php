@@ -46,5 +46,5 @@ while($row= mysqli_fetch_array($fetchQuery))
 
 
 
-</boby>
+</body>
 </html>
