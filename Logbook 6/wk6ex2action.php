@@ -34,9 +34,9 @@
 	{
 	$number=$_POST['phone_Number'];
 	$mail=$_POST['email'];
-	$s= $number,$mail."\n";
+	$s= $number ','$mail."\n";
 	$file=fopen ("update.txt ","a");
-	fputs($file,$s).);
+	fputs($file,$s['txttelno']).);
 
   fclose($file);
 	}
