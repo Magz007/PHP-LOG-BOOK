@@ -18,6 +18,13 @@ $fetchQuery = mysqli_query($link,$sql);
 
 <body style="padding-top: 100px; " >
 <div class= "container">
+  <?php
+ if(isset($_POST ['submitDeleteBtn']))
+ {
+   $key= $_POST['btndelete'];
+ }
+
+   ?>
   <table class='table' table border= "10px">
   <tr>
       <th> Index </th>
@@ -37,7 +44,7 @@ while($row= mysqli_fetch_array($fetchQuery))
     <td><?php echo $row['email'] ;?> </td>
       <td><?php echo $row['phone_Number'] ;?> </td>
         <td><?php echo $row['ID'] ;?> </td>
-        <td> <input type= "checkbox" name= "btndelete" value=<?php echo $row['ID'] ;?> </td>
+        <td> <input type= "checkbox" name= "btndelete" value=<?php echo $row['ID'] ;?> required></td>
 
         <td> <input type= "submit" name="submitDeleteBtn" class-= "btn btn-info">  </td>
 
