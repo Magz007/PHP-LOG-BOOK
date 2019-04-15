@@ -25,11 +25,11 @@ $fetchQuery = mysqli_query($link,$sql);
    $check=mysqli_query("select * from test where id='$key'");
    if (mysqli_num_rows ($check)> 0)
    {
-     $queryDelete=mysqli_query("DELETE from  test where id = '$key'");?>
+     $queryDelete=mysqli_query("DELETE from  test where id = '$key'");
    }
- }
+  ?>
+   }
 
-   ?>
   <table class='table' table border= "5px">
   <tr>
       <th> Index </th>
