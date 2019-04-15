@@ -25,7 +25,7 @@ $fetchQuery = mysqli_query($link,$sql);
  }
 
    ?>
-  <table class='table' table border= "10px">
+  <table class='table' table border= "5px">
   <tr>
       <th> Index </th>
     <th> Name </th>
