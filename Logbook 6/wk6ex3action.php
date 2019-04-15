@@ -24,7 +24,7 @@ $fetchQuery = mysqli_query($link,$sql);
    $key= $_POST['btndelete'];
    $check=mysqli_query($link,"SELECT * from test where id='$key" );
 
-   if (mysqli_num_rows($link, $check))
+   if (mysqli_num_rows( $check))
    {
      $queryDelete=mysqli_query($link,"DELETE from  test where id = '$key'");
    }
