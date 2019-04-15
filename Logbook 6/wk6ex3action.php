@@ -27,9 +27,9 @@ $fetchQuery = mysqli_query($link,$sql);
    {
      $queryDelete=mysqli_query("DELETE from  test where id = '$key'");
    }
-  ?>
-   }
 
+   }
+?>
   <table class='table' table border= "5px">
   <tr>
       <th> Index </th>
