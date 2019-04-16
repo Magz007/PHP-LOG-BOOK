@@ -24,7 +24,7 @@ $fetchQuery = mysqli_query($link,$sql);
    $key= $_POST['btndelete'];
    $result=mysqli_query($link,"SELECT * from test where id='$key'");
 
-   if (mysqli_num_rows($result)>0)
+   if (mysql_affected_rows($result)>0)
    {
      $queryDelete=mysqli_query($link,"DELETE * from  test where id = '$key'");
    }
@@ -52,7 +52,7 @@ while($row= mysqli_fetch_array($fetchQuery))
   <td><?php echo $row['name'] ;?> </td>
     <td><?php echo $row['email'] ;?> </td>
       <td><?php echo $row['phone_Number'] ;?> </td>
-        
+
         <td> <input type= "checkbox" name= "btndelete" value=<?php echo $row['ID'] ;?> required></td>
         <td> <input type= "submit" name="submitDeleteBtn" class-= "btn btn-info">  </td>
 
