@@ -9,6 +9,10 @@ function html_h1($text)
 {
 	echo "<h1> $text </h1>";
 }
+function html_h2($text)
+{
+  echo "<h2> $text</h2>";
+}
 
 function html_footer()
 {
