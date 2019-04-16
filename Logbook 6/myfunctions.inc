@@ -13,10 +13,17 @@ function html_h2($text)
 {
   echo "<h2> $text</h2>";
 }
+function calculatetax($salary, $rate)
+{
+	$tax = ($salary * ($rate/100));
+	return $tax;
+}
+
 
 function html_footer()
 {
 	echo "</body>";
 	echo "</html>";
 }
+
 ?>
