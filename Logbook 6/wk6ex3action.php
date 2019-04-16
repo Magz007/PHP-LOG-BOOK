@@ -16,24 +16,29 @@ $fetchQuery = mysqli_query($link,$sql);
 <html>
 <head> Delete Record </head>
 
-<body style="padding-top: 100px; " >
+<body style="padding-top: 100px;" >
 <div class= "container">
   <?php
  if(isset($_POST ['submitDeleteBtn']))
  {
    $key= $_POST['btndelete'];
-   $result=mysqli_query($link,"SELECT * from test where id='$key" );
+   $result=mysqli_query($link,"SELECT * from test where id='$key" );\
 
-   if (mysqli_fetch_assoc( $result))
+   if (mysqli_fetch_assoc( $result)>0)
    {
      $queryDelete=mysqli_query($link,"DELETE from  test where id = '$key'");
    }
+   ?>
+
+
+
+  <?php
    else {
      // code...
    }
 
    }
-?>
+  ?>
   <table class='table' table border= "5px">
   <tr>
       <th> Index </th>
@@ -54,7 +59,6 @@ while($row= mysqli_fetch_array($fetchQuery))
       <td><?php echo $row['phone_Number'] ;?> </td>
         <td><?php echo $row['ID'] ;?> </td>
         <td> <input type= "checkbox" name= "btndelete" value=<?php echo $row['ID'] ;?> required></td>
-
         <td> <input type= "submit" name="submitDeleteBtn" class-= "btn btn-info">  </td>
 
      </form>
