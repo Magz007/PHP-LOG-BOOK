@@ -23,4 +23,10 @@ function html_footer()
 	echo "</body>";
 	echo "</html>";
 }
+function taxallowance($salary, $allowance)
+{
+	$taxall = ($salary - $allowance);
+	return $taxall;
+  echo "$taxall";
+}
 ?>
