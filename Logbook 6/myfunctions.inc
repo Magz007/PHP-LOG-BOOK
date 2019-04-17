@@ -25,7 +25,7 @@ function html_footer()
 }
 function taxallowance($salary)
 {
-	$taxall = (calculatetax - taxallowance);
+	$taxall = ($calculatetax - $taxallowance);
 	return $taxall;
   echo "$taxall";
 }
