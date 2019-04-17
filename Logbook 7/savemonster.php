@@ -1,6 +1,14 @@
 <?php
+$link = mysqli_connect("localhost","root","","db1_gwalke01");
+if(!$link)
+{
+  echo "Error: Unable to connect to MySQL.";
+  exit;
+}
+echo "Success: A proper connention to MySQL was made.</br>";
 
-$db = mysqli_connect("localhost", "root", "", "db1_qwalke01");
+
+$db = mysqli_connect($link);
 
 // Obtain the file sent to the server within the response.
 $image = $_FILES['monsterimage']['tmp_name'];
