@@ -49,7 +49,7 @@ while($row= mysqli_fetch_array($fetchQuery))
     <td><?php echo $row['email'] ;?> </td>
       <td><?php echo $row['phone_Number'] ;?> </td>
         <td> <input type= "checkbox" name= "btndelete" value=<?php echo $row['ID'] ;?> required></td>
-        <td> <input type= "submit" name="submitDeleteBtn" class-= "btn btn-info">  </td>
+        <td> <button type= "submit" name="submitDeleteBtn" class-= "btn btn-info">  </td>
      </form>
 </tr>
 <?php $sr ++ ;}
